@@ -1,0 +1,71 @@
+---
+title: "R Markdown Tutorial Demo"
+author: "John Doe"
+date: "21/11/2016"
+output: html_document
+---
+
+##Preamble
+###Packages
+```{r, message=FALSE, warning=FALSE}
+library(dplyr) #for data manipulation
+library(pander) #to create pretty tables
+```
+
+```{r, include=FALSE}
+setwd("~/Desktop")
+edidiv <- read.csv("edidiv.csv")
+```
+
+
+##Data Exploration
+A preliminary investigation into the biodiversity of Edinburgh, using data from the NBN Gateway https://data.nbn.org.uk/.
+
+###What is the species richness across taxonomic groups?
+A table of species richness:
+```{r, results='asis'}
+richness <- 
+  edidiv %>%
+    group_by(taxonGroup) %>%
+    summarise(Species_richness = n_distinct(taxonName))
+
+richness
+```
+
+
+A barplot of the table above:
+```{r, fig.align="center", fig.width=15, fig.height=8}
+barplot(richness$Species_richness, 
+        names.arg = richness$taxonGroup, 
+        xlab="Taxa", ylab="Number of species", 
+        ylim=c(0,600)
+        ) 
+```
+
+
+###What is the most common species in each taxonomic group?
+
+A table of the most common species:
+```{r}
+#Create a vector of most abundant species per taxa
+max_abund <-
+  edidiv %>%
+    group_by(taxonGroup) %>%
+    summarise(taxonName = names(which.max(table(taxonName))))
+
+#Add the vector to the data frame
+richness_abund <-
+inner_join(richness, max_abund, by = "taxonGroup")
+richness_abund <- rename(richness_abund, Most_abundant =  taxonName, Taxon = taxonGroup)
+```
+
+```{r}
+richness_abund <- rename(richness_abund, "Most Abundant" = Most_abundant, "Species Richness" = Species_richness) #Change the column names
+emphasize.italics.cols(3) #Make the 3rd column italics
+pander(richness_abund) #Create a table
+```
+
+
+
+
+
