@@ -41,11 +41,9 @@ richness_abund <- rename(richness_abund, Most_abundant =  taxonName, Taxon = tax
 
 richness_abund
 
-#Finally, we want to 
-
-#Experiment using the information given in the tutorial to create a story about what is going on in this R script
+#Experiment using the information given in the tutorial to create a story about what is going on in this R script or any other script that you have access to 
 #Things to think about:
   # - Which bits of code need to be displayed in the final .html file?
   # - How can the formatting of the R markdown file be improved?
-  # - 
+
 
