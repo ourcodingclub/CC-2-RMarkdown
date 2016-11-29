@@ -1,4 +1,4 @@
-#Coding Club Workshop 7 R Markdown and reproducible code
+#Coding Club Workshop 7 R Markdown and reproducible code - Template R script
 #Written by John Godlee
 #21/11/16 
 #University of Edinburgh
@@ -39,6 +39,7 @@ richness_abund <-
 inner_join(richness, max_abund, by = "taxonGroup")
 richness_abund <- rename(richness_abund, Most_abundant =  taxonName, Taxon = taxonGroup)
 
+#What does the data frame look like now?
 richness_abund
 
 #Experiment using the information given in the tutorial to create a story about what is going on in this R script or any other script that you have access to 
