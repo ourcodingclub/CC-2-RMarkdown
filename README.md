@@ -9,3 +9,7 @@ The data (edidiv.csv) were downloaded from the NBN Gateway https://data.nbn.org.
 rmarkdown-cheatsheet.pdf was downloaded from https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf 
 
 For more about Coding Club, please see https://ourcodingclub.github.io/
+
+We would love to hear your feedback on the tutorial, whether you did it in the classroom or online:
+https://www.surveymonkey.co.uk/r/F5PDDHV
+
