@@ -3,7 +3,10 @@
 #21/11/16 
 #University of Edinburgh
 
-#We will be using this R script as a template from which we will create our R Markdown file
+# Use this example R script to practice compiling an R Markdown file, using the tutorial materials provided at:
+ourcodingclub.github.io
+
+# Follow through the tutorial to make a well commented, easy to follow record of what is going on so that others can easily follow.
 
 #Packages
 library(dplyr)
