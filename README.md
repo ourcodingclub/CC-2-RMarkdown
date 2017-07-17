@@ -17,3 +17,6 @@ For more about Coding Club, please see https://ourcodingclub.github.io/
 We would love to hear your feedback on the tutorial, whether you did it in the classroom or online:
 https://www.surveymonkey.co.uk/r/F5PDDHV
 
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
