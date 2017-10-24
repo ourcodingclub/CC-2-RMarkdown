@@ -6,7 +6,7 @@ https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html
 
 `RMarkdown_Tutorial.R` provides a basic R script to work with using the online tutorial material, to turn into an R Markdown document.
 
-The data (edidiv.csv) were downloaded from the NBN Gateway https://data.nbn.org.uk/ for educational purposes.
+The data (`edidiv.csv`) were downloaded from the NBN Gateway https://data.nbn.org.uk/ for educational purposes.
 
 `rmarkdown-cheatsheet.pdf` was downloaded from https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf 
 
