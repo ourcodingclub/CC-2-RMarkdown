@@ -14,6 +14,8 @@ The 3 demo R scripts (`RMarkdown_Demo_1.R`, `RMarkdown_Demo_2.R`, `Rmarkdown_Dem
 
 For more about Coding Club, please see https://ourcodingclub.github.io/
 
+Check out https://ourcodingclub.github.io/workshop/ to learn how you can get involved!
+
 We would love to hear your feedback on the tutorial, whether you did it at a Coding Club workshop or online: 
 https://www.surveymonkey.co.uk/r/F5PDDHV
 
