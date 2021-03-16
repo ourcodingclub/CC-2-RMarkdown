@@ -5,31 +5,34 @@ date: "21/11/2016"
 output: html_document
 ---
 
-##Preamble
-###Packages
+## Preamble
+
+### Packages
+
 ```{r, message=FALSE, warning=FALSE}
-library(dplyr) #for data manipulation
-library(pander) #to create pretty tables
+library(dplyr) # for data manipulation
+library(pander) # to create pretty tables
 ```
 
 ```{r, include=FALSE}
-setwd("~/Desktop")
 edidiv <- read.csv("edidiv.csv")
 ```
 
 
-##Data Exploration
+## Data Exploration
+
 A preliminary investigation into the biodiversity of Edinburgh, using data from the NBN Gateway https://data.nbn.org.uk/.
 
-###What is the species richness across taxonomic groups?
+### What is the species richness across taxonomic groups?
+
 A table of species richness:
 ```{r, results='asis'}
 richness <- 
   edidiv %>%
-    group_by(taxonGroup) %>%
-    summarise(Species_richness = n_distinct(taxonName))
+  group_by(taxonGroup) %>%
+  summarise(Species_richness = n_distinct(taxonName)) 
 
-richness
+pander(richness)
 ```
 
 
@@ -43,7 +46,7 @@ barplot(richness$Species_richness,
 ```
 
 
-###What is the most common species in each taxonomic group?
+### What is the most common species in each taxonomic group?
 
 A table of the most common species:
 ```{r}
