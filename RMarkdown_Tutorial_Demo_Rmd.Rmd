@@ -63,7 +63,9 @@ richness_abund <- rename(richness_abund, Most_abundant =  taxonName, Taxon = tax
 ```
 
 ```{r}
-richness_abund <- rename(richness_abund, "Most Abundant" = Most_abundant, "Species Richness" = Species_richness) #Change the column names
+richness_abund <- rename(richness_abund, 
+                        "Most Abundant" = Most_abundant,
+                        "Species Richness" = Species_richness) #Change the column names
 emphasize.italics.cols(3) #Make the 3rd column italics
 pander(richness_abund) #Create a table
 ```
